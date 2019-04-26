@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>学生注册</title>
+    <link rel="stylesheet" href="css/reg.css">
+    <script src="images/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <script>
+        $(function () {
+            $('input').val('')
+            $('#submit').on('click', function () {
+                $('.tip').show()
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="dowebok">
+        <div class="logo"></div>
+        <div class="form-item">
+            <input id="name" type="text" autocomplete="off" placeholder="姓名">
+            <p class="tip">请输入合法的姓名</p>
+        </div>
+        <div class="form-item">
+            <input id="sex" type="text" autocomplete="off" placeholder="性别">
+            <p class="tip">请输入合法的性别</p>
+        </div>
+        <div class="form-item">
+            <input id="age" type="text" autocomplete="off" placeholder="年龄">
+            <p class="tip">请输入合法的年龄</p>
+        </div>  <div class="form-item">
+        <input id="_class" type="text" autocomplete="off" placeholder="年级">
+        <p class="tip">请输入合法的年级</p>
+    </div>
+        <div class="form-item">
+            <input id="score" type="text" autocomplete="off" placeholder="成绩">
+            <p class="tip">请输入合法的成绩</p>
+        </div>
+        <div class="form-item">
+            <input id="password" type="password" autocomplete="off" placeholder="登录密码">
+            <p class="tip">$(res.)</p>
+        </div>
+        <div class="form-item"><button id="regBtn">注  册</button></div>
+        <div class="reg-bar">
+
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

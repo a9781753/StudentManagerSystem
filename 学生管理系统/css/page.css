@@ -1,0 +1,421 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+}
+.left {
+	background: #313541;
+	width: 20%;
+	float: left;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+}
+
+.top {
+	width: 80%;
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	border-bottom: 1px solid #b0cdff;
+}
+
+.content {
+	float: right;
+	display: inline-block;
+	width: 100%;
+	height:618px;
+	text-align: center;
+	font-size: 40px;
+	left: 300px;
+	top: 100px;
+	text-align: center;
+}
+
+.right{
+	float: right;
+	display: inline-block;
+	width: 80%;
+	height: 618px;
+	text-align: center;
+	font-size: 40px;
+	overflow: hidden;
+	background-color:rgba(125,125,125,0.1);
+}
+
+.leftTiyle {
+	font-size: 25px;
+	padding-left: 30px;
+	font-weight: 600;
+	color: #545454;
+	float: left;
+}
+
+.thisUser {
+	float: right;
+	margin-right: 30px;
+}
+
+.bigTitle {
+	background: #3d598a;
+	color: #fff;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 24px;
+	font-family: -webkit-body;
+}
+
+#adds{
+	padding-top: 200px;
+}
+
+.form-item button {
+	width: 360px;
+	height: 50px;
+	border: 0;
+	border-radius: 25px;
+	font-size: 18px;
+	color: #fff;
+	opacity: 0.8;
+	outline: none;
+	cursor: pointer;
+	background-color: #1f6f4a;
+}
+
+.alldelc {
+	width: 40px;
+	height: 16px;
+	border: 0;
+	border-radius: 25px;
+	font-size: 12px;
+	color: #fff;
+	opacity: 0.8;
+	line-height: 12px;
+	outline: none;
+	cursor: pointer;
+	background-color: #1f6f4a;
+}
+
+.alldel {
+	width: 40px;
+	height: 16px;
+	border: 0;
+	border-radius: 25px;
+	font-size: 12px;
+	color: #fff;
+	opacity: 0.8;
+	line-height: 12px;
+	outline: none;
+	cursor: pointer;
+	background-color: #1f6f4a;
+}
+.updatabtn {
+	width: 40px;
+	height: 16px;
+	border: 0;
+	line-height: 12px;
+	border-radius: 25px;
+	font-size: 12px;
+	color: #fff;
+	opacity: 0.8;
+	outline: none;
+	cursor: pointer;
+	background-color: #1f6f4a;
+}
+
+.updatacbtn {
+	width: 40px;
+	height: 16px;
+	border: 0;
+	line-height: 12px;
+	border-radius: 25px;
+	font-size: 12px;
+	color: #fff;
+	opacity: 0.8;
+	outline: none;
+	cursor: pointer;
+	background-color: #1f6f4a;
+}
+
+.adminaddstable{
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	border: solid #fff 5px;
+}
+.adminaddstablec{
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	border: solid #fff 5px;
+}
+
+.adminaddstable td{
+	display: inline-block;
+	width: 12%;
+	font-size: 20px;
+}
+.adminaddstablec td{
+	display: inline-block;
+	width: 12%;
+	font-size: 20px;
+}
+.adminfindstable{
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	border: solid #fff 5px;
+}
+
+.adminfindstablec{
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	border: solid #fff 5px;
+}
+#finds{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 40px;
+	overflow: hidden;
+	background-color:rgba(125,125,125,0.1);
+}
+
+
+
+#adminaddcourse_tr td{
+	font-size: 18px;
+}
+#chakebypage_tr td{
+	font-size: 18px;
+}
+#adminaddcourse_trc td{
+	font-size: 18px;
+}
+.adminfindstable td{
+	width: 4%;
+	font-size: 10px;
+	box-sizing: border-box;
+	padding: 10px 0 5px 0;
+}
+.adminfindstablec td{
+	width: 4%;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding: 10px 0 5px 0;
+}
+.adminfindstable1{
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	border: solid #fff 5px;
+}
+
+.adminaddcourse td{
+	width: 4%;
+	font-size: 10px;
+	box-sizing: border-box;
+	padding: 10px 0 5px 0;
+}
+.chakebypage td{
+	width: 4%;
+	font-size: 10px;
+	box-sizing: border-box;
+	padding: 10px 0 5px 0;
+}
+.adminaddcoursec td{
+	width: 4%;
+	font-size: 10px;
+	box-sizing: border-box;
+	padding: 10px 0 5px 0;
+}
+
+.adminaddcourse{
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 200px ;
+	padding: 30px 0 30px 0;
+	border: solid #fff 5px;
+}
+
+.chakebypage{
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	border: solid #fff 5px;
+}
+
+
+
+.adminaddcoursec{
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	margin-top: 200px ;
+	padding: 30px 0 30px 0;
+	border: solid #fff 5px;
+}
+
+.adminfindstable1 td{
+	width: 4%;
+	font-size: 10px;
+	box-sizing: border-box;
+	padding: 10px 0 5px 0;
+}
+
+
+.abc{
+	display: inline-block;
+	width: 80%;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 30px 0 30px 0;
+	border: solid #fff 5px;
+	margin-top: 30px;
+}
+
+.abc td{
+	width: 4%;
+	font-size: 10px;
+	box-sizing: border-box;
+}
+
+.abc_tr td{
+	font-size: 18px;
+}
+
+.adminaddcourse input{
+	display: inline-block;
+	width: 80%;
+	height: 30px;
+	border: 1px;
+	border-radius: 25px;
+	color: #000;
+	background-color:rgba(0,0,0,0.1);
+}
+.adminaddcoursec input{
+	display: inline-block;
+	width: 80%;
+	height: 30px;
+	border: 1px;
+	border-radius: 25px;
+	color: #000;
+	background-color:rgba(0,0,0,0.1);
+}
+
+
+.adminaddstable input{
+	display: inline-block;
+	width: 80%;
+	height: 30px;
+	border: 1px;
+	border-radius: 25px;
+	color: #000;
+	background-color:rgba(0,0,0,0.1);
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+	text-align: center;
+	color: #FFFFFF;
+
+}
+#findBtn{
+	width: 100px;
+	height: 40px;
+	border: 0;
+	border-radius: 25px;
+	font-size: 18px;
+	color: #fff;
+	opacity: 0.8;
+	outline: none;
+	cursor: pointer;
+	background-color: #1f6f4a;
+}
+
+#findid{
+	display: inline-block;
+	width: 30%;
+	height: 50px;
+	border: 1px;
+	border-radius: 25px;
+	text-align: center;
+	color: #000;
+	margin-top: 50px;
+	background-color:rgba(0,0,0,0.1);
+	font-size: 35px;
+}
+
+
+
+#delBtn{
+	width: 100px;
+	height: 40px;
+	border: 0;
+	border-radius: 25px;
+	font-size: 18px;
+	color: #fff;
+	opacity: 0.8;
+	outline: none;
+	cursor: pointer;
+	background-color: #1f6f4a;
+}
+
+#delId{
+	display: inline-block;
+	width: 30%;
+	height: 50px;
+	border: 1px;
+	border-radius: 25px;
+	text-align: center;
+	color: #000;
+	margin-top: 50px;
+	background-color:rgba(0,0,0,0.1);
+	font-size: 35px;
+}
+
+
+
+.lines .active {
+	background: #272a34;
+	color: #fff;
+	font-size: 20px;
+}
+.lines a{
+	color: white;
+}
+
+.lines img{
+	width: 23px;
+	vertical-align: middle;
+	margin-bottom: 4px;
+	margin-right: 9px;
+}
+.lines div {
+	height: 70px;
+	line-height: 70px;
+	padding-left: 50px;
+	color: #707783;
+}
+
+.lines div:hover {
+	cursor: pointer;
+	color: #FFFFFF;
+}

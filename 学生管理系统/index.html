@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>学生管理系统</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="images/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('input').val('')
+            $('#submit').on('click', function () {
+                $('.tip').show()
+            })
+        })
+        var code; //在全局 定义验证码
+        var code2; //在全局 定义验证码
+        function createCode() {
+            code = "";
+            var checkCode = document.getElementById("checkCode");
+            function RndNum(n) {
+                var rnd = "";
+                for (var i = 0; i < n; i++)
+                    rnd += Math.floor(Math.random() * 10);
+                return rnd;
+            }
+
+            var num = RndNum(2);
+            var num2 = RndNum(2);
+
+            code = num + "+" + num2 + "=";
+            code2 = parseInt(num) + parseInt(num2)
+
+            if (checkCode) {
+                checkCode.className = "code";
+                checkCode.value = code;
+            }
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $("#input1").blur(function () {
+                var inputCode = document.getElementById("input1").value;
+                if (inputCode.length <= 0) {
+                    alert("请输入验证码！");
+                }
+                else if (inputCode != code2) {
+                    alert("验证码输入错误！");
+                    createCode(); //刷新验证码
+                }
+                else {
+                    $("#loginBtn").removeAttr("disabled");
+                   
+                }
+            });
+        })
+    </script>
+
+    <script type="text/javascript" src="js/login.js" ></script>
+</head>
+<body>
+    <div class="dowebok">
+        <div class="logo"></div>
+        <div class="form-item">
+            <input id="username" type="text" autocomplete="off" placeholder="用户名">
+            <p class="tip">请输入合法的用户名</p>
+        </div>
+        <div class="form-item">
+            <input id="password" type="password" autocomplete="off" placeholder="登录密码">
+            <p class="tip">$(res.)</p>
+
+        </div>
+        <form action="#">
+            <input type="text" placeholder="点击获取验证码" onclick="createCode()" readonly="readonly" id="checkCode" class="unchanged" style="width: 134px;text-align: center;"/>
+            <input type="text" id="input1" />
+        </form>
+        <div class="form-item"><button id="loginBtn" disabled="disabled">登 录</button></div>
+        <div class="reg-bar">
+
+            <select name="role" id="role">
+                <option value="1">管理员</option>
+                <option value="2">学生</option>
+            </select>
+            <a class="reg" href="http://localhost:63342/学生管理系统/reg.html">学生注册</a>
+            <!--<a class="forget" href="javascript:">忘记密码</a>-->
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>

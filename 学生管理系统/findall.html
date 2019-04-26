@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>管理员后台</title>
+    <link rel="stylesheet" href="css/page.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/flidall.js"></script>
+    <style>
+        #up {
+            width: 80px;
+            height: 20px;
+            border: 0;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #fff;
+            margin-top: 10px;
+            outline: none;
+            cursor: pointer;
+            display: inline-block;
+            background-color: #1f6f4a;
+        }
+
+        #down  {
+            width: 80px;
+            height: 20px;
+            border: 0;
+            border-radius: 15px;
+            display: inline-block;
+            font-size: 14px;
+            color: #fff;
+            margin-top: 10px;
+            outline: none;
+            cursor: pointer;
+            background-color: #1f6f4a;
+        }
+
+        .pn  {
+            width: 21px;
+            height: 21px;
+            border: 0;
+            display: inline-block;
+            font-size: 14px;
+            line-height: 14px;
+            color: #fff;
+            outline: none;
+            cursor: pointer;
+            margin:10px 10px 0 10px;
+            background-color: #90EE90;
+        }
+        #hdpn{
+            background-color: #1f6f4a;
+        }
+        #foot{
+            position: absolute;
+            text-align: center;
+            top: 600px;
+            left: 765px;
+        }
+        </style>
+</head>
+
+<body>
+<div class="left">
+    <div class="bigTitle">管理员后台</div>
+    <div class="lines">
+        <div onclick="pageClick(this)"><img src="img/icon-1.png"/><a href="http://localhost:63342/学生管理系统/admin.html#adds">添加学生信息</a></div>
+        <div onclick="pageClick(this)" class="active"><img src="img/icon-1.png"/><a href="findall.html" id="findsBtn">查询全部学生信息</a></div>
+        <div onclick="pageClick(this)"><img src="img/icon-3.png"/><a href="http://localhost:63342/学生管理系统/admin.html#byids">根据ID查看学生信息</a></div>
+        <div onclick="pageClick(this)" style="display: none"><img src="img/icon-3.png"/><a href="updata.html">修改学生信息</a></div>
+        <div onclick="pageClick(this)" style="display: none"><img src="img/icon-3.png"/><a href="http://localhost:63342/学生管理系统/admin.html#dels">删除学生信息</a></div>
+        <div onclick="pageClick(this)"><img src="img/icon-2.png"/><a href="http://localhost:63342/学生管理系统/admin.html#addc">添加课程</a></div>
+        <div onclick="pageClick(this)" style="display: none"><img src="img/icon-2.png"/><a href="http://localhost:63342/学生管理系统/admin.html#updatac">修改课程</a></div>
+        <div onclick="pageClick(this)" style="display: none"><img src="img/icon-2.png"/><a href="findallcourse.html">查看全部课程</a></div>
+        <div onclick="pageClick(this)"><img src="img/icon-2.png"/><a href="findallcourseByPage.html">分页查看课程</a></div>
+    </div>
+</div>
+<div class="top">
+    <div class="leftTiyle" id="flTitle">查询全部学生信息</div>
+
+    <a href="#" class="thisUser">退出</a>
+    <div class="thisUser">当前用户：XXX</div>
+    <!--<div class="thisUser">当前在线人数：XXX</div>-->
+</div>
+<div class="right">
+
+
+    <div class="content" id="finds">
+        <table class="abc">
+            <tr class="abc_tr">
+                <td>ID</td>
+                <td>姓名</td>
+                <td>性别</td>
+                <td>年龄</td>
+                <td>班级</td>
+                <td>成绩</td>
+                <td>密码</td>
+                <td>注册时间</td>
+                <td>修改时间</td>
+                <td>操作用户</td>
+            </tr>
+        </table>
+        <table class="adminfindstable">
+        </table>
+    </div>
+    <div id="foot">
+        <div class="form-item" style="display: inline-block">
+            <button id="up" >上一页</button>
+        </div>
+        <div id="nbt" style="display: inline-block">
+
+        </div>
+        <div class="form-item" style="display: inline-block">
+            <button id="down">下一页</button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

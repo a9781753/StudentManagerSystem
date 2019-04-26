@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+
+<mapper namespace="com.neuedu.pojo.Student">
+
+ 
+  
+
+<select id="isexit" parameterType="com.neuedu.pojo.StudentCourse"  resultType="int" >
+  
+  select count(sid) from studentcourse where sid=#{sid} and cid=#{cid};
+  
+  
+  </select>
+
+<insert id="choiceCourse" parameterType="com.neuedu.pojo.StudentCourse" >
+  
+  insert into studentcourse(sid,cid) values(#{sid},#{cid})
+  
+  </insert>
+
+
+
+<select id="studentcourses" parameterType="int"  resultType="map" >
+  
+  select s.id,s.sid,s.cid,c.cname from studentcourse s join courses c on s.cid=c.cid where sid=#{_parameter}
+ </select>
+  
+  
+  
+<update id="deletecourse" parameterType="com.neuedu.pojo.StudentCourse"  >
+delete from studentcourse where sid=#{sid} and cid=#{cid}
+</update>
+
+
+</mapper>

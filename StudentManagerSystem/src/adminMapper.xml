@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+
+<mapper namespace="com.neuedu.pojo.Admin">
+
+ 
+  <select id="login" parameterType="com.neuedu.pojo.Admin"  resultType="com.neuedu.pojo.Admin" >
+  
+  select * from admin where username=#{username} and password=#{password};
+  
+  
+  </select>
+
+
+  
+  
+  <insert id="addcourse" parameterType="String" keyProperty="cid"  >
+  
+  insert into courses(cname) values(#{cname})
+  
+  </insert>
+  
+  <select id="findcourse" resultType="java.util.HashMap" >
+  
+  select cid,cname from courses;
+  
+  
+  </select>
+  
+   <update id="updatecourse" parameterType="com.neuedu.pojo.Course" >
+  
+   update courses set cname=#{cname}  where cid=#{cid};
+ 
+  </update>
+  
+    <select id="deletecourse" parameterType="com.neuedu.pojo.Course">
+  
+   delete from courses where cid=#{_parameter};
+ 
+  </select>
+  
+  
+  
+  <select id="findcourseByPage" parameterType="com.neuedu.common.pageModel"  resultType="map" >
+  
+  	select * from courses limit #{pageNo},#{pageSize}
+  
+  
+  </select>
+  
+  
+    <select id="findStudentByPage" parameterType="com.neuedu.common.pageModel"  resultType="map" >
+  
+  	select * from students limit #{pageNo},#{pageSize}
+  
+  
+  </select>
+  
+   <select id="count" parameterType="com.neuedu.common.pageModel"  resultType="int" >
+  
+  	select count(cid) from courses
+  
+  
+  </select>
+ 
+     <select id="studentcount" parameterType="com.neuedu.common.pageModel"  resultType="int" >
+  
+  	select count(id) from students
+  
+  
+  </select>
+  
+    <insert id="addStudent" parameterType="com.neuedu.pojo.Student" keyProperty="id"  >
+  
+  insert into students(name,sex,age,_class,score,regtime,modtime,password) values(#{name},#{sex},#{age},#{_class},#{score},now(),now(),#{password})
+  
+  </insert>
+  
+  
+   <update id="updateStudent" parameterType="com.neuedu.pojo.Student" >
+  update students set name=#{name},sex=#{sex},age=#{age},_class=#{_class},score=#{score},modtime=now(),password=#{password}  where id=#{id};  
+  </update>
+  
+  
+
+
+
+</mapper>
